@@ -1,9 +1,33 @@
+"""
+This module provides the Encode module. The module is designed to read a file, with the first part being a frequency
+table. The module then decodes the rest of the file using Huffmans algorithm with the frequency table.
+
+Requirements
+------------
+Python 3.7 or higher.
+PQHeap.py
+bitIO.py
+DictBinTree.py
+
+Notes
+-----
+Module is created as part of the group project for the final exam of DS814 Algoritmer og Datastrukturer forår 2024.
+
+Projektgrupe:
+Chris Thorbjørn Eichmuller Vandborg
+cvand15@student.sdu.dk
+
+Lars Mogensen
+lmoge23@student.sdu.dk
+
+"""
+
 import bitIO
 import sys
 from PQHeap import insert, extractMin
 from DictBinTree import DictBinTree
 
-class MyEncode:
+class EncodeFile:
     def __init__(self, infile):
         self.infile = infile
         
@@ -55,5 +79,8 @@ class SymbolHolder:
         self.symbol = symbol
 
 
-
+if __name__ == 'main':
+    input_file = 'placeHolder'  #TODO
+    output_file = 'placeHolder' #TODO
+    EncodeFile(input_file, output_file)
         
